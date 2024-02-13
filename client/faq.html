@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link of CSS files -->
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawsome.min.css" />
+  <link rel="stylesheet" href="assets/css/flaticon.css" />
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/odometer.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <title>Mr Mobiles</title>
+  <link rel="icon" type="image/png" href="assets/images/fav-icon.png" />
+</head>
+
+<body>
+  <div id="pre-loader">
+    <img class="preloader-img" src="assets/images/preloader1.gif" alt="gif" />
+  </div>
+
+  <!-- Topbar Area Start -->
+  <div class="topbar">
+    <div class="container-fluid container-large">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-9 col-sm-12 col-12">
+          <div class="topbar-left-area">
+            <ul>
+              <li>
+                <i class="flaticon-phone-call"></i>
+                <a href="tel:+441617033651">+4401617033651</a>
+              </li>
+              <li>
+                <i class="flaticon-email"></i>
+                <a href="mailto:mrmobilesandpcs@gmail.com">mrmobilesandpcs@gmail.com</a>
+              </li>
+              <li>
+                <i class="flaticon-location"></i>
+                <a href="https://goo.gl/maps/3ysvqZ4rVCHz8Zbd6" target="_blank">Mr. Mobiles, 24 Little Hulton,
+                  Manchester M28 0AU, UK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-12 col-12">
+          <div class="topbar-social-icons">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/mrmobilesandpcs" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/mrmobilesandpcs" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/https://www.snapchat.com/add/mrmobilesandpcs?share_id=-zZDBjYKljw&locale=en-GB"
+                  target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar Area End -->
+
+  <!-- Navigation area start -->
+  <div class="navbar-area">
+    <!-- Menu For Mobile Device -->
+    <div class="main-responsive-nav">
+      <div class="container-fluid container-large">
+        <div class="mobile-nav">
+          <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="logo" /></a>
+
+        </div>
+      </div>
+    </div>
+    <!-- Menu For Desktop Device -->
+    <div class="main-nav">
+      <div class="container-fluid container-large">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <h1>Admin Portal</h1>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="admin-dashboard.html" class="nav-link active">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a href="service-status.html" class="nav-link">Service Status</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="customer-onboarding.html" class="nav-link">Customer Onboarding</a>
+              </li>
+              <li class="nav-item">
+                <a href="stock.html" class="nav-link">Stock</i></a>
+              </li>
+              <li class="nav-item">
+                <a href="customer-report.html" class="nav-link active">Customer Report</a>
+              </li>
+              <li class="nav-item">
+                <a href="Customer-contacts.html" class="nav-link">Customer Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="Faqs.html" class="nav-link">Faq's</a>
+              </li>
+              <li class="nav-item">
+                <a href="subscribers.html" class="nav-link">Subscribers</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" onclick="logout()" style="color: red;"> Logout</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation area end -->
+
+  <!-- Uni Banner Area Start -->
+  <div class="uni-banner">
+    <div class="container-fluid container-large">
+      <div class="uni-banner-text-area">
+        <h1>FAQ</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Uni Banner Area End -->
+
+  <!-- Faq Area Start -->
+  <div class="faq ptb-100">
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion-item mt-0">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  What services does Mr Mobiles offer?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Mr Mobiles provides a wide range of services, including mobile, computer, and tablet repairs,
+                    unlocking, upgrades, laptop repairs, and buying and selling of devices.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How long does it take to repair a mobile, computer, or tablet?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Repair times may vary depending on the issue and the availability of parts. Our skilled technicians
+                    work efficiently to complete most repairs within a reasonable timeframe.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Does Mr Mobiles use genuine parts for repairs and upgrades?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Yes, at Mr Mobiles, we prioritize using genuine parts for repairs and upgrades to ensure the best
+                    performance and longevity of your devices.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Do you offer a warranty on your repair services?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Absolutely! We stand behind the quality of our services and offer a warranty on repairs and
+                    replacements for your peace of mind.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion-item pt-30 mt-0">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Can you unlock all types of mobile devices?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Yes, we specialize in mobile unlocking for various brands and models, allowing you to switch
+                    carriers or use your device internationally.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  What types of laptops do you repair and upgrade?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Mr Mobiles offers repair and upgrade services for a wide range of laptop brands, including both
+                    Windows and Mac systems.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Do you buy used mobiles, computers, and tablets?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Yes, we buy used devices in good condition. Bring in your old gadgets, and we'll provide a fair
+                    assessment and offer for your device.
+
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  How do I know if my device needs a battery replacement?
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    If your mobile, computer, or tablet is experiencing rapid battery drainage or shutting down
+                    unexpectedly, it may be time for a battery replacement.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Faq Area End -->
+  <!-- Faq Contact Area Start -->
+  <div class="faq-contact pb-100">
+    <div class="container">
+      <div class="default-section-title default-section-title-middle">
+        <span>Contact Us</span>
+        <h3>Do You Have Any Question?</h3>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="faq-contact-img-area">
+              <img src="assets/images/inner-images/faq-contact-img.jpg" alt="image" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="faq-contact-form">
+              <form id="faq-form">
+                <input type="text" class="form-control" placeholder="Name" id="name" required />
+                <input type="email" class="form-control" placeholder="Email" id='email' required />
+                <input type="number" class="form-control" placeholder="Phone" id="number" required />
+                <input type="text" class="form-control" placeholder="Question" id="question" required />
+                <textarea class="form-control" rows="5" placeholder="Message" id="message"></textarea>
+                <div id="alert-message" class="alert-message hide"></div>
+                <button class="default-button">
+                  <span>Send Question <i class="flaticon-right-arrow"></i></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Faq Contact Area End -->
+
+  <!-- Newsletter Area Start -->
+  <div class="newsletter ptb-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="newsletter-text-area">
+            <h3>Join Our Newsletter</h3>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="newsletter-form-area pt-30">
+            <form id="newsletter-form" data-toggle="validator">
+              <div class="input-group">
+                <input type="email" class="input-newsletter form-control" id="email-input" placeholder="Your Email"
+                  name="EMAIL" required autocomplete="off" />
+                <button class="default-button" type="submit">
+                  <span><i class="flaticon-paper-plane"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter Area End -->
+
+  <!-- Footer Area Start -->
+  <div class="footer ptb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="footer-logo-area">
+            <a href="index.html"><img src="assets/images/Logo.png" alt="logo" /></a>
+            <p>
+              Your trusted destination for top-notch Mobile, PC, and Tablet repair services. Fast, reliable, and
+              affordable solutions for all your tech needs
+            </p>
+            <div class="footer-social-area">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/mrmobilesandpcs" target="_blank"><i
+                      class="fab fa-facebook-f"></i></a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/mrmobilesandpcs" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com/https://www.snapchat.com/add/mrmobilesandpcs?share_id=-zZDBjYKljw&locale=en-GB"
+                    target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="footer-links footer-lp footer-services">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html">PC Repair</a></li>
+              <li><a href="services.html">Laptop Repair</a></li>
+              <li><a href="services.html">Smartphone Repair</a></li>
+              <li><a href="services.html">Tablet Repair</a></li>
+              <li><a href="services.html">Mac Repair</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="footer-links footer-lp">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="registration.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="testimonial.html">Testimonials</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="footer-links footer-contact">
+            <h3>Get In Touch</h3>
+            <div class="footer-contact-card">
+              <i class="flaticon-phone-call"></i>
+              <h6>Phone</h6>
+              <p><a href="tel:441617033651">+4401617033651</a></p>
+              <p><a href="tel:0785 0085 095">0785 0085 095</a></p>
+            </div>
+            <div class="footer-contact-card">
+              <i class="flaticon-email"></i>
+              <h6>Email</h6>
+              <p><a href="mailto:mrmobilesandpcs@gmail.com">mrmobilesandpcs@gmail.com</a></p>
+            </div>
+            <div class="footer-contact-card">
+              <i class="flaticon-location"></i>
+              <h6>Loaction</h6>
+              <p>
+                <a href="https://goo.gl/maps/3ysvqZ4rVCHz8Zbd6" target="_blank">Mr. Mobiles, 24 Little Hulton,
+                  Manchester M28 0AU, UK</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Area End -->
+
+  <!-- Copyright Area Start -->
+  <div class="copyright" style="display:flex;align-items:center;justify-content:center">
+    <div class="container">
+      <p>
+        Copyright @
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All Rights Reserved By
+        <a target="_blank" href="index.html">Mr.Mobiles</a>
+      </p>
+    </div>
+
+    <div class="container">
+      <p>
+        Powered By
+        <a target="_blank" href="https://www.instagram.com/jobminar">
+          <img src="./assets/images/jm.png" alt="jobminar consultants pvt ltd." width="50px">
+        </a>
+      </p>
+    </div>
+  </div>
+  <!-- Copyright Area End -->
+
+  <!-- Progress Area Start -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- Progress Area End -->
+
+  <!-- popup area start -->
+  <div class="popup">
+    <div class="popup-content">
+      <div class="close-btn" id="popup-close">
+        <span></span>
+        <span></span>
+      </div>
+      <form>
+        <div class="input-group search-box">
+          <input type="text" class="form-control" placeholder="Search" />
+          <button class="btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- popup area end -->
+
+  <!-- Link of JS files -->
+  <script src="./api/error.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/meanmenu.js"></script>
+  <script src="assets/js/owl.carousel2.thumbs.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/TweenMax.js"></script>
+  <script src="assets/js/nice-select.min.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.js"></script>
+  <script src="assets/js/ajaxchimp.min.js"></script>
+  <script src="assets/js/appear.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/tilt.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./api/new-letter.js"></script>
+  <script src="./api/faq.js"></script>
+</body>
+
+</html>

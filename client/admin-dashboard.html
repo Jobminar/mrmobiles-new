@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link of CSS files -->
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawsome.min.css" />
+  <link rel="stylesheet" href="assets/css/flaticon.css" />
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="assets/css/odometer.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+
+
+  <title>Mr.Mobiles</title>
+  <link rel="icon" type="image/png" href="assets/images/fav-icon.png" />
+</head>
+
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+  }
+
+  .button {
+    border: 1px solid rgb(80, 77, 77);
+    background-color: #fefefe;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+</style>
+
+
+<body>
+  <div id="pre-loader">
+    <img class="preloader-img" src="assets/images/preloader1.gif" alt="gif" />
+  </div>
+
+  <!-- Navigation area start -->
+  <div class="navbar-area">
+    <!-- Menu For Mobile Device -->
+    <div class="main-responsive-nav">
+      <div class="container-fluid container-large">
+        <div class="mobile-nav">
+        </div>
+      </div>
+    </div>
+    <!-- Menu For Desktop Device -->
+    <div class="main-nav">
+      <div class="container-fluid container-large">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <h1>Admin Portal</h1>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="admin-dashboard.html" class="nav-link active">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a href="service-status.html" class="nav-link">Service Status</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="customer-onboarding.html" class="nav-link">Customer Onboarding</a>
+              </li>
+              <li class="nav-item">
+                <a href="stock.html" class="nav-link">Stock</i></a>
+              </li>
+              <li class="nav-item">
+                <a href="customer-report.html" class="nav-link active">Customer Report</a>
+              </li>
+              <li class="nav-item">
+                <a href="Customer-contacts.html" class="nav-link">Customer Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="Faqs.html" class="nav-link">Faq's</a>
+              </li>
+              <li class="nav-item">
+                <a href="subscribers.html" class="nav-link">Subscribers</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" onclick="logout()" style="color: red;"> Logout</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation area end -->
+
+
+  <!-- Dashboard content Start-->
+  <div class="container dashboard-container">
+    <div id=" dashboard-content">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Service Status</h5>
+              <p class="card-text">
+                This section allows you to update service status, send emails,
+                and delete features.
+              </p>
+              <a href="service-status.html" class="btn btn-primary">Go to Service Status</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Stock</h5>
+              <p class="card-text">
+                Manage and update stock information, stock items, and quantities.
+              </p>
+              <a href="stock.html" class="btn btn-primary">Go to Stock</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Customer Onboarding</h5>
+              <p class="card-text">
+                Here, you can manage the customer onboarding process and track
+                customer details.
+              </p>
+              <a href="customer-onboarding.html" class="btn btn-primary">Go to Customer Onboarding</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Customer Report</h5>
+              <p class="card-text">
+                Generate and view customer reports for analysis and insights.
+              </p>
+              <a href="customer-report.html" class="btn btn-primary">Go to Customer Report</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Change Password</h5>
+              <p class="card-text">
+                Update your admin portal password for security purposes.
+              </p>
+              <button class="btn btn-primary" onclick="openUpdatePasswordModal()">Change Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dashboard content End-->
+
+  <!-- Update Password Start -->
+  <div id="updatePasswordModal" class="modal">
+    <div class="login-form modal-content">
+      <span id="closeUpdateBtn" class="close">&times;</span>
+      <h3>Change Password</h3>
+      <form id="changePasswordForm">
+        <div class="form-group">
+          <label for="updatePassword">Current Password:</label>
+          <input type="password" id="currentPassword" required>
+        </div>
+        <div class="form-group">
+          <label for="updateNewPassword">New Password:</label>
+          <input type="password" id="newPassword" required>
+        </div>
+        <div class="form-group">
+          <label for="updateConfirmPassword">Confirm New Password:</label>
+          <input type="text" id="confirmNewPassword" required>
+        </div>
+        <button type="submit" id="updateBtn" class="button mt-3">Change Password</button>
+      </form>
+    </div>
+  </div>
+  <!-- Update Password End -->
+
+  <!-- Progress Area Start -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- Progress Area End -->
+
+
+  <!-- Link of JS files -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/dist/jwt-decode.min.js"></script> -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/meanmenu.js"></script>
+  <script src="assets/js/owl.carousel2.thumbs.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/TweenMax.js"></script>
+  <script src="assets/js/nice-select.min.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.js"></script>
+  <script src="assets/js/ajaxchimp.min.js"></script>
+  <script src="assets/js/appear.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/tilt.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="./api/access.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./api/access.js"></script>
+  <!-- <script src="./api/access.js"></script> -->
+  <script src="./api/update-password.js"></script>
+
+
+</body>
+
+</html>
