@@ -4,7 +4,7 @@
 // Get the addStockModal element and the closeBtn element
 const addStockModal = document.getElementById("addStockModal");
 const closeBtn = document.getElementById("closeBtn");
-
+window.addEventListener("load", fetchAndRenderStock);
 // Function to open the add stock modal
 function openAddStockModal() {
   addStockModal.style.display = "block";
@@ -58,7 +58,7 @@ updateStockBtn.addEventListener("click", function (event) {
 // Function to fetch and render stock data
 function fetchAndRenderStock() {
   axios
-    .get("http://localhost:8083/api/stocks")
+    .get(`http://localhost:8083/api/stocks`)
     .then(function (response) {
       const stockData = response.data;
       // Generate the stock table dynamically
