@@ -1,7 +1,7 @@
 // Function to handle form submission
 
 function generateRandomString(length) {
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const characters = "abcdefghijklamnopqrstuvwxyz";
   let result = "";
 
   for (let i = 0; i < length; i++) {
@@ -30,11 +30,11 @@ function handleFormSubmit(event) {
     "expectedDeliveryDate"
   ).value;
   const comments = document.getElementById("comments").value;
-  const serviceId = generateRandomString(6);
+  const service = generateRandomString(6);
   // Make a POST request using Axios
   axios
     .post("http://localhost:8083/api/customer/onboarding", {
-      serviceId,
+      service,
       name,
       mobile,
       email,

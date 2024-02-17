@@ -8,48 +8,42 @@ closeBtn.onclick = function () {
   modal.style.display = "none";
 };
 
-function fetchAndRenderData(startDate, endDate) {
+function fetchAndRenderData() {
   axios
-    .get("http://localhost:8083/api/customer/reports", {
-      params: {
-        startDate,
-        endDate,
-      },
-      // Remove Authorization header
-    })
+    .get("http://localhost:8083/api/customer/all-reports")
     .then(function (response) {
       const reportsData = response.data;
-      // console.log(reportsData);
 
       const customerReportsBody = document.getElementById(
         "customer-reports-body"
       );
       customerReportsBody.innerHTML = ""; // Clear existing table rows
 
-      let totalPendingAmount = 0; // Variable to store the total pending amount
-      let totalPendingStatus = 0; // Variable to store the count of pending statuses
+      let totalPendingAmount = 0;
+      let totalPendingStatus = 0;
 
-      // Loop through the reports data and create table rows
       reportsData.forEach(function (customer) {
-        let pendingamount = customer.priceQuoted - customer.advancePay;
-        totalPendingAmount += pendingamount;
+        let pendingAmount = customer.priceQuoted - customer.advancePay;
+        totalPendingAmount += pendingAmount;
+
         if (customer.status === "pending") {
           totalPendingStatus++;
         }
 
         const row = document.createElement("tr");
         row.innerHTML = `
-        <td>${customer.serviceId}</td>
+          <td>${customer.service}</td>
           <td>${customer.name}</td>
           <td>${customer.mobile}</td>
           <td>${customer.email}</td>
           <td>${customer.priceQuoted}</td>
           <td>${customer.advancePay}</td>
-          <td class='pending'>${pendingamount}</td>
+          <td class='pending'>${pendingAmount}</td>
           <td><a href=''>${customer.status}</a></td>
           <td>${customer.registeredDate.slice(0, 10)}</td>
           <td>${customer.expectedDeliveryDate.slice(0, 10)}</td>
         `;
+
         customerReportsBody.appendChild(row);
 
         // Add Edit and Delete buttons
@@ -76,6 +70,7 @@ function fetchAndRenderData(startDate, endDate) {
         row.appendChild(actionsCell);
         customerReportsBody.appendChild(row);
       });
+
       const totalreport = document.getElementById("totalreport");
       totalreport.innerHTML = `
        <p><b>Total Pending Amount : </b>${totalPendingAmount}</p>

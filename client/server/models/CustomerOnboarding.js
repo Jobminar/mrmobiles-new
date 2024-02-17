@@ -1,11 +1,7 @@
 import { Schema, model } from "mongoose";
 
 const customerOnboardingSchema = Schema({
-  serviceId: {
-    type: String,
-
-    required: true,
-  },
+  service: String,
   name: String,
   mobile: Number,
   email: String,

@@ -32,7 +32,7 @@ function handleFormSubmit(event) {
 
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td>${customer.serviceId}</td>
+            <td>${customer.service}</td>
             <td>${customer.name}</td>
             <td>${customer.mobile}</td>
             <td>${customer.email}</td>
